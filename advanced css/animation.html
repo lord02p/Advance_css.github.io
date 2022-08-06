@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Boll Effect</title>
+    <style>
+        body {
+            background-color: #fff;
+            padding: 2rem;
+        }
+        
+        .animation_box {
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 1rem;
+            padding-top: 10rem;
+            border-bottom: 10px solid rgb(63, 81, 181);
+            border-radius: 10px;
+            padding-bottom: 2px;
+        }
+        
+        .boll {
+            width: 2rem;
+            height: 2rem;
+            background-color: rgb(63, 81, 181);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border-radius: 999rem;
+            animation: boll_animation 1s linear infinite alternate-reverse;
+            transform: translateY(0);
+        }
+        
+        .boll:nth-child(2) {
+            animation-delay: .8s;
+        }
+        
+        .boll:nth-child(3) {
+            animation-delay: .6s;
+        }
+        
+        .boll:nth-child(4) {
+            animation-delay: .4s;
+        }
+        
+        .boll:nth-child(5) {
+            animation-delay: .2s;
+        }
+        
+        @keyframes boll_animation {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-8rem);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation_box">
+        <div class="boll"></div>
+        <div class="boll"></div>
+        <div class="boll"></div>
+        <div class="boll"></div>
+        <div class="boll"></div>
+    </div>
+</body>
+
+</html>

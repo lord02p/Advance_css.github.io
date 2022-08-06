@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Letter and First Line</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+        
+        body {
+            height: 100vh;
+            padding: 4rem;
+            background-color: rgb(103, 58, 183);
+            color: white;
+        }
+        
+        p::first-letter {
+            color: rgb(255, 152, 0);
+            font-size: 6rem;
+            font-weight: 900;
+            float: left;
+            display: block;
+            margin: 0 10px 3px 0;
+            line-height: .5;
+        }
+        
+        p::first-line {
+            color: rgb(255, 152, 0);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo modi molestias voluptas quis atque odio maiores molestiae quidem impedit inventore sint nulla nesciunt ut doloribus aliquid vero facere exercitationem aliquam, laudantium veritatis
+        numquam aut eum? Voluptates tenetur et maxime dolor reprehenderit quod provident, id eius, repellat rerum recusandae porro nostrum sit. Fuga temporibus, voluptatum culpa dolorum quasi beatae inventore. Ex laborum voluptatem optio illum. <br> Laboriosam
+        necessitatibus dicta commodi quasi labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellendus repudiandae quibusdam itaque, quae dolores cupiditate cumque sit a explicabo ipsa minus eos sapiente adipisci aliquam quas
+        tempora illo, quam necessitatibus quod. Excepturi cum illo rerum consequuntur facilis! Alias magnam magni voluptate, a perspiciatis sunt, corporis, blanditiis iste id expedita pariatur labore nam dolorum autem repellat fugiat iure eius non.
+    </p>
+</body>
+
+</html>

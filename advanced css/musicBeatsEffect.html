@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .beat {
+            height: 6rem;
+            width: 4px;
+            background-color: rgb(0, 188, 212);
+            transform-origin: bottom;
+            transform: scaleY(0);
+            animation: beat_anim 1s linear infinite;
+        }
+        
+        .beat:nth-child(2) {
+            animation-delay: .9s;
+        }
+        
+        .beat:nth-child(3) {
+            animation-delay: .8s;
+        }
+        
+        .beat:nth-child(4) {
+            animation-delay: .7s;
+        }
+        
+        .beat:nth-child(5) {
+            animation-delay: .6s;
+        }
+        
+        .beat:nth-child(6) {
+            animation-delay: .5s;
+        }
+        
+        .beat:nth-child(7) {
+            animation-delay: .4s;
+        }
+        
+        .beat:nth-child(8) {
+            animation-delay: .3s;
+        }
+        
+        .beat:nth-child(9) {
+            animation-delay: .2s;
+        }
+        
+        .beat:nth-child(10) {
+            animation-delay: .1s;
+        }
+        
+        @keyframes beat_anim {
+            0% {
+                transform: scaleY(0);
+            }
+            50% {
+                transform: scaleY(1);
+            }
+            100% {
+                transform: scaleY(0);
+            }
+        }
+        
+        .beat
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="beat"></div>
+        <div class="beat"></div>
+        <div class="beat"></div>
+        <div class="beat"></div>
+        <div class="beat"></div>
+        <div class="beat"></div>
+        <div class="beat"></div>
+        <div class="beat"></div>
+        <div class="beat"></div>
+        <div class="beat"></div>
+    </div>
+</body>
+
+</html>

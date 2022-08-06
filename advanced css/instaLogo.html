@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta Logo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo {
+            background: rgb(36, 245, 9);
+            box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+            width: 15rem;
+            height: 15rem;
+            border-radius: 30px;
+            /* position: relative; */
+            padding: 2rem;
+        }
+        
+        .inner_sqare {
+            border: 12px solid white;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            position: relative;
+            display: grid;
+            place-items: center;
+        }
+        
+        .inner_sqare::after {
+            content: "";
+            width: 3.8rem;
+            height: 3.8rem;
+            position: absolute;
+            border: 12px solid #fff;
+            border-radius: 999rem;
+        }
+        
+        .inner_sqare::before {
+            content: "";
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            background: #fff;
+            border-radius: 999rem;
+            top: 1rem;
+            right: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="inner_sqare"></div>
+        </div>
+    </div>
+</body>
+
+</html>

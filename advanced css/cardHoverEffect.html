@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Card Hoover Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+        
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            background-color: rgb(96, 125, 139);
+        }
+        
+        .card1 {
+            width: 25rem;
+            height: 13rem;
+            background: #fff;
+            padding: 1rem;
+            transition: .4s;
+            border-radius: 10px;
+            box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+        }
+        
+        .card1 .card1_img {
+            width: 100%;
+            transform: translateY(-80px);
+        }
+        
+        .card1_img img {
+            width: 100%;
+            border-radius: 6px;
+            box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+            z-index: 999;
+        }
+        
+        .card1_desc {
+            /* text-align: center; */
+            transform: translateY(-350px);
+            opacity: 0;
+            transition: .4s;
+            z-index: 0;
+        }
+        
+        .card1_desc h2 {
+            color: rgb(96, 125, 139);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .card1:hover {
+            height: 26rem;
+            cursor: pointer;
+        }
+        
+        .card1:hover>.card1_desc {
+            transform: translateY(-43px);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="card1">
+            <div class="card1_img">
+                <img src="sports1.jpg" alt="">
+            </div>
+            <div class="card1_desc">
+                <h2>Happy Learn</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eos aperiam dignissimos? Possimus sed ratione deserunt odit distinctio adipisci amet.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

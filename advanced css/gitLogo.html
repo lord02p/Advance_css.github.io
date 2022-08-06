@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Logo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .git {
+            background-color: rgb(255, 123, 0);
+            box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+            width: 15rem;
+            height: 15rem;
+            border-radius: 15px;
+            position: relative;
+            transform: rotate(45deg);
+        }
+        
+        .line1 {
+            width: 11rem;
+            height: 1.2rem;
+            position: absolute;
+            background-color: #fff;
+            top: 3.5rem;
+        }
+        
+        .line1::after {
+            content: "";
+            width: 3rem;
+            height: 3rem;
+            background-color: #fff;
+            border-radius: 999rem;
+            position: absolute;
+            top: -1rem;
+            left: 3rem;
+        }
+        
+        .line1::before {
+            content: "";
+            width: 3rem;
+            height: 3rem;
+            background-color: #fff;
+            border-radius: 999rem;
+            position: absolute;
+            top: -1rem;
+            right: -1rem;
+        }
+        
+        .line2 {
+            width: 10rem;
+            height: 1.2rem;
+            position: absolute;
+            background-color: #fff;
+            transform-origin: top;
+            position: relative;
+            top: 6.7rem;
+            left: 2.8rem;
+            transform: rotate(45deg);
+        }
+        
+        .line2::after {
+            content: "";
+            width: 3rem;
+            height: 3rem;
+            background-color: #fff;
+            border-radius: 999rem;
+            position: absolute;
+            top: -1rem;
+            left: 9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="git">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+    </div>
+</body>
+
+</html>
